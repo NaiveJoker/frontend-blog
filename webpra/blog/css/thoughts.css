@@ -1,0 +1,22 @@
+#thoughts {
+  background-color: #ffffff;
+  outline: solid 0.5px #eeeeee;
+  padding: 5% 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.article-context img {
+  width: 50%;
+  height: 50%;
+}
+.article-context p {
+  font-size: 20px;
+  margin: 20px 0px 30px;
+}
+.article-sub {
+  margin-top: 20px;
+}
+.article-sub span {
+  color: rgb(95, 158, 160);
+}

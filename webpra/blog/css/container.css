@@ -1,0 +1,50 @@
+.section {
+  height: 350px;
+  background-color: #ffffff;
+  outline: solid 0.5px #eeeeee;
+  display: flex;
+  align-items: flex-start;
+  padding: 10% 20%;
+}
+
+#banner {
+  background-image: url("../img/cover.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+#banner > div > p {
+  font-size: 30px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+h1 {
+  font-size: 45px;
+  color: #ffffff;
+}
+.img-box {
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  box-shadow: 3px 3px 3px 0 #aaaaaa;
+}
+.sec-img {
+  height: 300px;
+}
+.text-box {
+  margin-left: 50px;
+}
+.text-box h2 {
+  font-size: 30px;
+}
+.text-box p {
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.text-box a {
+  font-size: 20px;
+  color: rgb(90, 117, 24);
+}
+.sec-text {
+  width: 510px;
+}

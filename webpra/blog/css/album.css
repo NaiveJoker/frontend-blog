@@ -1,0 +1,47 @@
+.display-box {
+  outline: solid 0.5px gainsboro;
+  padding: 5% 20%;
+  box-sizing: border-box;
+}
+#display-box-l {
+  height: 80%;
+}
+#display-box-l h2 {
+  font-size: 30px;
+  margin-top: 20px;
+  color: rgb(143, 21, 102);
+}
+#display-box-l p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+#display-box-s {
+  height: 100%;
+}
+.s-pic-intro {
+  margin-top: 10px;
+  font-size: 20px;
+}
+#large-pic {
+  background-image: url("../img/tree-red.jpg");
+  height: 500px;
+  background-size: cover;
+}
+.pic-box {
+  background-image: url("../img/木.png");
+  height: 200px;
+  background-position: center;
+}
+#display-box-s {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.pic-txt {
+  margin-left: 30px;
+  height: 300px;
+}
+.s-pic-time {
+  font-size: 15px;
+  color: rgb(143, 21, 102);
+}

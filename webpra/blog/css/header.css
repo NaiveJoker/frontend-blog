@@ -1,0 +1,50 @@
+#header{
+    height: 60px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: rgb(200, 200, 200);
+    padding: 0 20%;
+    display: flex;
+    align-items: center;
+}
+#nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#link-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+ul, li{
+    float: left;
+    margin-left: -40px;
+}
+#link-box>ul>li>a{
+    color: #ffffff;
+}
+li{
+    margin-left:40px;
+}
+#link-box>ul>li>a:link{
+    color: #ffffff;
+}
+#link-box>ul>li>a:visit{
+    color: #ffffff;
+}
+#link-box>ul>li>a:hover{
+    color: rgb(90, 117, 24);
+}
+#profile{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+#user-box{
+    display: flex;
+    align-items: center;
+}
+

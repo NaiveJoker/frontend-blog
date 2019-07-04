@@ -1,0 +1,69 @@
+{% extends "blog/layout.html" %} {% block title %} 评论 {% endblock %} 
+{% block container %}
+<!-- 图片部分 -->
+<div class="pic-banner">
+  <div class="img-box"><img src="../../static/blog/image/桃.png" /></div>
+  <p>你好，我是王兰花，很高兴在这里和你遇见。写下你想对我说的话吧。</p>
+</div>
+<!-- 留言部分 -->
+<div class="comment-box">
+  <div class="comment-text">
+    <form>
+      <textarea placeholder="请在此评论"></textarea>
+      <button>提交</button>
+    </form>
+  </div>
+  <div class="comment-display">
+    <div class="comment-display-unit">
+      <div class="display-unit">
+        <a class="comment-header"></a>
+        <div class="text-unit">
+          <p class="c-name">李小花</p>
+          <p class="c-text">啊文章写得太好了</p>
+        </div>
+      </div>
+      <a class="like" href="http://www.bilibili.com" target="_blank"></a>
+    </div>
+    <div class="comment-display-unit">
+      <div class="display-unit">
+        <a class="comment-header"></a>
+        <div class="text-unit">
+          <p class="c-name">王建国</p>
+          <p class="c-text">喜欢你的文字和图片</p>
+        </div>
+      </div>
+      <a class="like" href="http://www.bilibili.com" target="_blank"></a>
+    </div>
+    <div class="comment-display-unit">
+      <div class="display-unit">
+        <a class="comment-header"></a>
+        <div class="text-unit">
+          <p class="c-name">张共和</p>
+          <p class="c-text">很高兴与你遇见</p>
+        </div>
+      </div>
+      <a class="like" href="http://www.bilibili.com" target="_blank"></a>
+    </div>
+    <div class="comment-display-unit">
+      <div class="display-unit">
+        <a class="comment-header"></a>
+        <div class="text-unit">
+          <p class="c-name">范爱民</p>
+          <p class="c-text">与你相伴</p>
+        </div>
+      </div>
+      <a class="like" href="http://www.bilibili.com" target="_blank"></a>
+    </div>
+    <div class="comment-display-unit">
+      <div class="display-unit">
+        <a class="comment-header"></a>
+        <div class="text-unit">
+          <p class="c-name">孙爱党</p>
+          <p class="c-text">请继续更新呀，加油</p>
+        </div>
+      </div>
+      <a class="like" href="http://www.bilibili.com" target="_blank"></a>
+    </div>
+  </div>
+</div>
+{% endblock %}

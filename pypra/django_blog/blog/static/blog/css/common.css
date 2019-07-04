@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  font-size: 20px;
+  text-decoration: none;
+}
+p {
+  font-size: 20px;
+}
+body {
+  background-color: #fefefe;
+}
+img {
+  width: auto;
+  height: auto;
+}
+.page-container {
+  min-height: 800px; 
+}

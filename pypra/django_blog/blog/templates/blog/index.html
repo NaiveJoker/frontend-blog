@@ -1,0 +1,69 @@
+{% extends "blog/layout.html" %}
+{% block title %}
+主页
+{% endblock %}
+{% block container %}
+<div id="container">
+  <!-- 图片banner -->
+  <div class="section" id="banner">
+    <div>
+      <h1>王兰花的小屋</h1>
+      <p>记录王兰花的一些小心思</p>
+    </div>
+  </div>
+  <!-- 游记 -->
+  <div class="section" id="tour">
+    <div class="img-box">
+      <img src="../../static/blog/image/桃.png" class="sec-img" />
+    </div>
+    <div class="text-box">
+      <h2>游记-九寨沟行</h2>
+      <p class="sec-text" id="">
+        九寨沟，顾名思义，那里有九个寨子九条沟，目前就只开发了三条，即则渣洼沟、日则沟和树正沟，呈“Y”字形分布。翠海、叠瀑、彩林、雪峰、藏情、蓝冰，被称为...
+      </p>
+      <a href="{% url 'album' %}">更多照片></a>
+    </div>
+  </div>
+  <div class="section">
+    <div class="img-box">
+      <img src="../../static/blog/image/桃.png"/ class="sec-img" />
+    </div>
+    <div class="text-box">
+      <h2>思辨-通过爱好选专业，可能是当代最无耻的谎言</h2>
+      <p class="sec-text" id="">
+        高考结束了，不管考的是好是坏，都是一段旅程的结束。然而，从填报志愿开始，人生的新一段旅程开始了。近2个礼拜，微信后台以及知乎私信都有大量的人在问我与...
+      </p>
+      <a href="{% url 'thoughts' %}">文章详情></a>
+    </div>
+  </div>
+  <!-- 小诗 -->
+  <div class="section" id="poem">
+    <div class="img-box">
+      <img src="../../static/blog/image/桃.png" class="sec-img" />
+    </div>
+    <div class="text-box">
+      <h2>小诗-饱腹之后</h2>
+      <p class="sec-text" id="">
+        大快朵颐之后<br />
+        如面条进了我腹中一般<br />
+        太阳也匿进了树叶里<br />
+        只剩稀疏的光在桌腿之间<br />
+        拖出斑驳的影。
+      </p>
+    </div>
+  </div>
+  <!-- 摘录 -->
+  <div class="section" id="copy">
+    <div class="img-box">
+      <img src="../../static/blog/image/桃.png" class="sec-img" />
+    </div>
+    <div class="text-box">
+      <h2>摘录-我学到的第一步</h2>
+      <p class="sec-text" id="">
+        我不知道我在干什么，我常常不知道自己在干什么。有时候，我被五岁的自己附体；有时候，我被十七岁的自己附体；有时候，我被刚生下来的自己附体。只有很少的时...
+      </p>
+      <a href="#">阅读原文></a>
+    </div>
+  </div>
+</div>
+{% endblock %}

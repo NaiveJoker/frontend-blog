@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>登录</title>
+    {% load static %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'blog/css/common.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'blog/css/log-sign.css' %}"
+    />
+  </head>
+
+  <body>
+    <div class="page-container">
+      <div class="main-form">
+        <h2 class="blog-title">满井博客</h2>
+        <form class="log-form">
+          <div class="input-box">
+            <input class="username" placeholder="请输入手机号" type="text" />
+          </div>
+          <div class="input-box">
+            <input class="username" placeholder="请输入验证码" type="text" />
+            <button class="btn">发送验证码</button>
+          </div>
+          <div class="input-box">
+            <input class="password" placeholder="请输入密码" type="password" />
+          </div>
+          <button class="btn"><a href="{% url 'login' %}">注册</a></button>
+        </form>
+        <div class="link-box">
+          <p class="inline-link">
+            <a class="link" href="{% url 'login' %}">已有账户？</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

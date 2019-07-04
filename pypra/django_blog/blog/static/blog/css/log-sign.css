@@ -1,0 +1,79 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefe;
+  min-height: 800px;
+  padding: 0 20%;
+}
+.main-form {
+  min-width: 400px;
+}
+.form {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+.btn {
+  font-size: 20px;
+  background-color: #3d52d5;
+  color: #ffffff;
+  border: none;
+  padding: 5px;
+}
+.input-box {
+  height: 50px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+input {
+  height: 50px;
+  width: auto;
+  min-width: 300px;
+  font-size: 20px;
+  padding: 0 5px;
+  background-color: #b4c5e4;
+  color: #ffffff;
+  flex: 1;
+}
+input::placeholder {
+  color: #fefefe;
+}
+input:focus {
+  background-color: #fefefe;
+  color: #090c9b;
+  outline: solid 2px #090c9b;
+}
+
+.btn {
+  font-size: 20px;
+  min-width: 0;
+  width: 100%;
+  flex: 1;
+  height: 50px;
+}
+.btn a {
+  color: #ffffff;
+}
+.link-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.link-box a {
+  font-size: 14px;
+  color: #b4c5e4;
+}
+.blog-title {
+  font-size: 40px;
+  color: #3c3744;
+  margin-bottom: 20px;
+}
+.link:active {
+  color: #3d52d5;
+}

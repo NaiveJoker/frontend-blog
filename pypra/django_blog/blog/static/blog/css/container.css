@@ -1,0 +1,54 @@
+.section {
+  height: 350px;
+  outline: solid 0.5px #a9c6de;
+  display: flex;
+  align-items: flex-start;
+  padding: 10% 20%;
+}
+
+#banner {
+  background-image: url("../image/duotone.png");
+  background-size: cover;
+  background-attachment: fixed;
+  outline: none;
+}
+#banner > div > p {
+  font-size: 30px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+#banner h1 {
+  font-size: 45px;
+  color: #ffffff;
+}
+.img-box {
+  overflow: hidden;
+  height: 300px;
+  box-shadow: 3px 3px 3px 0 #aaaaaa;
+}
+.img-box img {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+}
+.sec-img {
+  height: 300px;
+}
+.text-box {
+  margin-left: 50px;
+}
+.text-box h2 {
+  font-size: 30px;
+}
+.text-box p {
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.text-box a {
+  font-size: 20px;
+  color: #3d52d5;
+}
+.sec-text {
+  width: 510px;
+}

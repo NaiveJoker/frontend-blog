@@ -1,0 +1,24 @@
+#thoughts {
+  outline: solid 0.5px #eeeeee;
+  padding: 5% 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.article-context img {
+  width: 50%;
+  height: 50%;
+}
+.article-context p {
+  font-size: 20px;
+  margin: 20px 0px 30px;
+}
+.article-title h1 {
+  color: black;
+}
+.article-sub {
+  margin-top: 20px;
+}
+.article-sub span {
+  color: #b4c5e4;
+}

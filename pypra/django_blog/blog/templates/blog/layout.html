@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{% block title %}{% endblock %}</title>
+    {% load static %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'blog/css/common.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'blog/css/header.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'blog/css/page.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'blog/css/footer.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'blog/css/album.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'blog/css/comment.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'blog/css/thoughts.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'blog/css/container.css' %}"
+    />
+  </head>
+  <body>
+    <div id="page-container">
+      <!-- header -->
+      <div id="header">
+        <div id="nav">
+          <div id="logo-box">
+            <span><a href="{% url 'index' %}">我的博客</a></span>
+          </div>
+          <div id="link-box">
+            <ul>
+              <li class="link"><a href="{% url 'album' %}">相册</a></li>
+              <li class="link"><a href="{% url 'thoughts' %}">思辨</a></li>
+              <li class="link"><a href="{% url 'comments' %}">评论</a></li>
+            </ul>
+          </div>
+          <div id="user-box">
+            <span>王兰花</span>
+            <img src="../../static/blog/image/我的.png" id="profile" />
+            <a href="{% url 'login' %}">退出登录</a>
+          </div>
+        </div>
+      </div>
+      <!-- container -->
+      {% block container %} {% endblock %}
+      <!-- page -->
+      <div class="page">
+        <ul class="pagelist">
+          <li><a href="#" class="page-link"><</a></li>
+          <li>
+            <input type="radio" name="page" style="display:none;" id="radio1"
+            class="page"/ checked><label for="radio1" class="btn">1</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="page"
+              style="display:none;"
+              id="radio2"
+              class="page"
+            /><label for="radio2" class="btn">2</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              name="page"
+              style="display:none;"
+              id="radio3"
+              class="page"
+            /><label for="radio3" class="btn">3</label>
+          </li>
+          <li><a href="#" class="page-link">></a></li>
+        </ul>
+      </div>
+      <!-- footer -->
+      <div id="footer">
+        <a href="#" id="wechat-box">
+          <img src="../../static/blog/image/offical.jpg" id="official" ; /><img
+            src="../../static/blog/image/微信.png"
+            id="wechat"
+          />
+        </a>
+        <a href="#body"
+          ><img src="../../static/blog/image/向上.png" id="back-top"
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>

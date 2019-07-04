@@ -1,0 +1,54 @@
+#header {
+  height: 60px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #3d52d5;
+  padding: 0 20%;
+  display: flex;
+  align-items: center;
+}
+#nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#link-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+ul,
+li {
+  float: left;
+  margin-left: -40px;
+}
+li {
+  margin-left: 40px;
+}
+#link-box > ul > li > a {
+  color: #ffffff;
+}
+#logo-box span a {
+  color: #ffffff;
+  font-size: 20px;
+}
+#link-box > ul > li > a:visit {
+  color: #ffffff;
+}
+#link-box > ul > li > a:hover {
+  color: #b4c5e4;
+}
+#profile {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+#user-box {
+  display: flex;
+  align-items: center;
+}
+#user-box a {
+  color: #a9c6de;
+}

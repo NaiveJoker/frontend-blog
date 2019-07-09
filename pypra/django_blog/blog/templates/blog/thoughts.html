@@ -1,7 +1,22 @@
 {% extends "blog/layout.html" %} {% block title %} 思辨 {% endblock %} 
+
+
 {% block container %}
 <!-- thoughts -->
-<div class="article-box" id="thoughts">
+<!-- {% if article %}
+  <div div class="article-box">
+    <h1 class="article-title">{{ article.title }}</h1>
+    <div class="article-sub">
+        <span>{{ article.category.name }}</span>
+    </div>
+  </div>
+  <div class="article-context">
+
+    {{ article.content|safe }}
+  </div>
+{% else %}
+{% endif %} -->
+<div class="article-box">
   <h1 class="article-title">通过爱好选专业，可能是当代最无耻的谎言</h1>
   <div class="article-sub">
     <span>原创：半佛仙人</span>

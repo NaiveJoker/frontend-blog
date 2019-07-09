@@ -1,88 +1,76 @@
 {% extends "blog/layout.html" %}
 {% block title %} 相册
 {% endblock %}
+
 {% block container %}
 <div id="container">
   <div class="album">
     <div class="display-box" id="display-box-l">
       <div id="large-pic"></div>
-      <h2>血色黄栌</h2>
-      <p id="l-pic-intro">通过图片处理网站将黄栌进行调色</p>
+      <h2>我的相册</h2>
+      <p id="l-pic-intro">小图为我的相册</p>
     </div>
     <div class="display-box" id="display-box-s">
-      <div class="pic-txt">
-        <div class="pic-box"></div>
-        <p class="s-pic-intro">木</p>
-        <p class="s-pic-time">2019/03/02</p>
-        <p class="s-pic-intro">图片拍摄于北科</p>
-      </div>
-      <div class="pic-txt">
-        <div class="pic-box"></div>
-        <p class="s-pic-intro">木</p>
-        <p class="s-pic-time">2019/03/02</p>
-        <p class="s-pic-intro">图片拍摄于北科</p>
-      </div>
-      <div class="pic-txt">
-        <div class="pic-box"></div>
-        <p class="s-pic-intro">木</p>
-        <p class="s-pic-time">2019/03/02</p>
-        <p class="s-pic-intro">图片拍摄于北科</p>
-      </div>
-      <div class="pic-txt">
-        <div class="pic-box"></div>
-        <p class="s-pic-intro">木</p>
-        <p class="s-pic-time">2019/03/02</p>
-        <p class="s-pic-intro">图片拍摄于北科</p>
-      </div>
-      <div class="pic-txt">
-        <div class="pic-box"></div>
-        <p class="s-pic-intro">木</p>
-        <p class="s-pic-time">2019/03/02</p>
-        <p class="s-pic-intro">图片拍摄于北科</p>
-      </div>
-      <div class="pic-txt">
-        <div class="pic-box"></div>
-        <p class="s-pic-intro">木</p>
-        <p class="s-pic-time">2019/03/02</p>
-        <p class="s-pic-intro">图片拍摄于北科</p>
-      </div>
-      <div class="pic-txt">
-        <div class="pic-box"></div>
-        <p class="s-pic-intro">木</p>
-        <p class="s-pic-time">2019/03/02</p>
-        <p class="s-pic-intro">图片拍摄于北科</p>
-      </div>
-      <div class="pic-txt">
-        <div class="pic-box"></div>
-        <p class="s-pic-intro">木</p>
-        <p class="s-pic-time">2019/03/02</p>
-        <p class="s-pic-intro">图片拍摄于北科</p>
-      </div>
-      <div class="pic-txt">
-        <div class="pic-box"></div>
-        <p class="s-pic-intro">木</p>
-        <p class="s-pic-time">2019/03/02</p>
-        <p class="s-pic-intro">图片拍摄于北科</p>
-      </div>
-      <div class="pic-txt">
-        <div class="pic-box"></div>
-        <p class="s-pic-intro">木</p>
-        <p class="s-pic-time">2019/03/02</p>
-        <p class="s-pic-intro">图片拍摄于北科</p>
-      </div>
-      <div class="pic-txt">
-        <div class="pic-box"></div>
-        <p class="s-pic-intro">木</p>
-        <p class="s-pic-time">2019/03/02</p>
-        <p class="s-pic-intro">图片拍摄于北科</p>
-      </div>
-      <div class="pic-txt">
-        <div class="pic-box"></div>
-        <p class="s-pic-intro">木</p>
-        <p class="s-pic-time">2019/03/02</p>
-        <p class="s-pic-intro">图片拍摄于北科</p>
-      </div>
+      {% for album in albums %}
+        <div class="pic-txt">
+          <div class="s-pic-box"><img class="pic" src="../../../media/{{ album.img }}"></div>
+          <p class="s-pic-time">{{ album.position }}</p>
+          <p class="s-pic-intro">{{ album.desc }}</p>
+        </div>
+      {% empty %}
+        <div class="pic-txt">
+          <div class="pic-box"></div>
+          <p class="s-pic-intro">木</p>
+          <p class="s-pic-time">2019/03/02</p>
+          <p class="s-pic-intro">图片拍摄于北科</p>
+        </div>
+        <div class="pic-txt">
+          <div class="pic-box"></div>
+          <p class="s-pic-intro">木</p>
+          <p class="s-pic-time">2019/03/02</p>
+          <p class="s-pic-intro">图片拍摄于北科</p>
+        </div>
+        <div class="pic-txt">
+          <div class="pic-box"></div>
+          <p class="s-pic-intro">木</p>
+          <p class="s-pic-time">2019/03/02</p>
+          <p class="s-pic-intro">图片拍摄于北科</p>
+        </div>
+        <div class="pic-txt">
+          <div class="pic-box"></div>
+          <p class="s-pic-intro">木</p>
+          <p class="s-pic-time">2019/03/02</p>
+          <p class="s-pic-intro">图片拍摄于北科</p>
+        </div>
+        <div class="pic-txt">
+          <div class="pic-box"></div>
+          <p class="s-pic-intro">木</p>
+          <p class="s-pic-time">2019/03/02</p>
+          <p class="s-pic-intro">图片拍摄于北科</p>
+        </div>
+        <div class="pic-txt">
+          <div class="pic-box"></div>
+          <p class="s-pic-intro">木</p>
+          <p class="s-pic-time">2019/03/02</p>
+          <p class="s-pic-intro">图片拍摄于北科</p>
+        </div>
+      {% endfor %}
     </div>
+  </div>
+  <!-- 显示页码 -->
+  <div class="page">
+    <ul class="pagelist">
+      {% if albums.has_previous %}
+      <li><a href="?page={{ albums.previous_page_number }}" class="page-link"><</a></li>
+      {% endif %}
+      <li>
+        <input type="radio" name="page" style="display:none;" id="radio1"
+        class="page" checked/><label for="radio1" class="btn">{{ albums.number }}</label>
+      </li>
+      {% if albums.has_next %}
+      <li><a href="?page={{ albums.next_page_number }}" class="page-link">></a></li>
+      {% endif %}
+    </ul>
   </div>
 </div>
 {% endblock %}

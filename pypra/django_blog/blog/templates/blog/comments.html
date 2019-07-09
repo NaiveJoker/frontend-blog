@@ -1,5 +1,5 @@
-{% extends "blog/layout.html" %} {% block title %} 评论 {% endblock %} 
-{% block container %}
+{% extends "blog/layout.html" %} {% block title %} 评论 {% endblock %} {% block
+container %}
 <!-- 图片部分 -->
 <div class="pic-banner">
   <div class="img-box"><img src="../../static/blog/image/桃.png" /></div>
@@ -14,11 +14,24 @@
     </form>
   </div>
   <div class="comment-display">
+    {% for comment in comments %}
+    <div class="comment-display-unit">
+      <div class="display-unit">
+        <a class="comment-header"></a>
+        <div class="text-unit">
+          <p class="c-name">{{ comment.user }}</p>
+          <p class="c-text">{{ comment.content }}</p>
+        </div>
+      </div>
+      <a class="like" href="http://www.bilibili.com" target="_blank"></a>
+    </div>
+    {% empty %}
     <div class="comment-display-unit">
       <div class="display-unit">
         <a class="comment-header"></a>
         <div class="text-unit">
           <p class="c-name">李小花</p>
+          <span class="time">评论时间</span>
           <p class="c-text">啊文章写得太好了</p>
         </div>
       </div>
@@ -64,6 +77,33 @@
       </div>
       <a class="like" href="http://www.bilibili.com" target="_blank"></a>
     </div>
+    {% endfor %}
   </div>
+</div>
+<div class="page-c">
+  <ul class="pagelist-c">
+    {% if comments.has_previous %}
+    <li>
+      <a href="?page={{ comments.previous_page_number }}" class="page-link"
+        ><</a
+      >
+    </li>
+    {% endif %}
+    <li>
+      <input
+        type="radio"
+        name="page"
+        style="display:none;"
+        id="radio1"
+        class="page"
+        checked
+      /><label for="radio1" class="btn">{{ comments.number }}</label>
+    </li>
+    {% if comments.has_next %}
+    <li>
+      <a href="?page={{ comments.next_page_number }}" class="page-link">></a>
+    </li>
+    {% endif %}
+  </ul>
 </div>
 {% endblock %}
